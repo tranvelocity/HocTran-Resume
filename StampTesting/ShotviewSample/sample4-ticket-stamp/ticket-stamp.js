@@ -10,8 +10,6 @@
  *
  */
 (function() {
-  alert('Testing ticket stamp');
-
   "use strict";
 
   // Ticket ID
@@ -129,7 +127,8 @@
   var shotview = new Digishot.Shotview({
     // URL for recognition
     //   At server side, check the validity of the ticket and specify the date and time to display.
-    serviceURI: "../api/ticket-stamp.php",
+    // serviceURI: "../api/ticket-stamp.php",
+    serviceURI: "http://watches.hoctran.net/StampTesting/ShotviewSample/api/ticket-stamp.php",
 
     // Shotview container elements
     container: "shotview-container",
